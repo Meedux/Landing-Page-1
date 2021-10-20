@@ -1,0 +1,203 @@
+/*Fonts and Shit*/
+@import url('https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: auto 0;
+}
+
+/*
+	To-do: Finish The Footer and Optimize the Website For Mobile Users;
+	FUCKING MEDIA QUERY AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+*/
+
+
+
+
+
+nav{
+	background-color: #0B0C11;
+	margin: auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-around;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	font-family: "Indie Flower", cursive;
+	font-size: 20px;
+	transition: 300ms;
+}
+
+nav a:hover {
+	padding: 10px;
+	border-radius: 40px;
+	background-color: #787984;
+	color: black;
+}
+
+.title {
+	display: flex;
+
+	height: 100%;
+	width: 100%;
+
+	color: white;
+	margin: 0;
+	background-image: url("./img/back1.jpg");
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+	justify-content: center;
+	align-items: center;
+
+}
+
+.main {
+	background-color: #000000;
+}
+
+.about-us-title h1 {
+	font-family: "Frijole", cursive;
+}
+
+.about-us-title p {
+	min-width: 90%;
+	font-size: 2em;
+	font-family: "Gaegu", cursive;
+}
+
+.title > h1 {
+	font-family: "Vampiro One";
+	font-weight: lighter;
+	font-size: 5em;
+}
+
+.about-us-title {
+	background-color: #000;
+	text-align: center;
+	color: white;
+	margin: auto 0;
+}
+
+h1, p {
+	margin: auto 0;
+}
+
+.about-us {
+	background-color: #000000;
+	color: white;
+
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: 1fr 1fr;
+
+	/*grid-auto-flow: row;*/
+
+	/*grid-column-gap: 20px;*/
+	grid-row-gap: 20px;
+
+
+}
+
+.about-us h1{
+	font-family: "Waiting for the Sunrise", cursive;
+}
+
+.about-us p{
+	font-family: "Cutive Mono", cursive;
+}
+
+img {
+	width: 28em;
+	height: 20em;
+}
+
+.build-img{
+	float: left;
+}
+
+.design-img {
+	float: right;
+	grid-column: span / 3
+}
+
+.implement {
+	grid-column: span 6;
+	text-align: center;
+	margin-bottom: 150px;
+}
+
+.implement-img {
+	width: 65%;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	transition: 300ms;
+}
+
+.signup a {
+	display: flex;
+	justify-content: center;
+	border: 2px solid white;
+	margin-top: 150px;
+	transition: 200ms;
+	margin: 0 40%;
+
+	text-decoration: none;
+	color: white;
+	font-family: "Indie Flower", cursive;
+	font-size: 20px;
+	transition: 300ms;
+
+	border-radius: 30px
+}
+
+.signup a:hover {
+	padding: 10px;
+	border-radius: 40px;
+	background-color: #787984;
+	border-color: #787984;
+	color: black;
+}
+
+footer {
+	padding-top: 200px;
+	color: white;
+	background-color: #000000;
+	text-align: center;
+}
+
+/*it worked but how?????????????*/
+
+@media all and (max-width: 800px) {
+	.about-us {
+		/*grid-template-columns: 1em;*/
+		grid-template-columns: auto-fill(1, 1fr);
+	}
+	img {
+		width: 100%;
+		height: 13em;
+	}
+}
